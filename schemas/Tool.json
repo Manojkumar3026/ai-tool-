@@ -1,0 +1,25 @@
+
+{
+  "name": "Tool",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "tagline": { "type": "string" },
+    "description": { "type": "string" },
+    "website_url": { "type": "string" },
+    "logo_url": { "type": "string" },
+    "category": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "pricing_type": { "type": "string", "enum": ["Free", "Freemium", "Paid", "Open Source"] },
+    "target_audience": { "type": "array", "items": { "type": "string" } },
+    "launch_date": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "enum": ["approved", "featured", "pending"] },
+    "views": { "type": "number", "default": 0 },
+    "favorites_count": { "type": "number", "default": 0 },
+    "rating_avg": { "type": "number", "default": 0 },
+    "rating_count": { "type": "number", "default": 0 },
+    "features": { "type": "array", "items": { "type": "string" } },
+    "use_cases": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["name", "category", "website_url"]
+}

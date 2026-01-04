@@ -1,0 +1,11 @@
+
+{
+  "name": "Favorite",
+  "type": "object",
+  "properties": {
+    "tool_id": { "type": "string" },
+    "user_email": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "required": ["tool_id", "user_email"]
+}

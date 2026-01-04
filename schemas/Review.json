@@ -1,0 +1,15 @@
+
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "tool_id": { "type": "string" },
+    "user_email": { "type": "string" },
+    "rating": { "type": "number", "minimum": 1, "maximum": 5 },
+    "title": { "type": "string" },
+    "content": { "type": "string" },
+    "helpful_count": { "type": "number", "default": 0 },
+    "verified_user": { "type": "boolean", "default": false }
+  },
+  "required": ["tool_id", "user_email", "rating", "content"]
+}

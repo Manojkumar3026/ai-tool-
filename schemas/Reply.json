@@ -1,0 +1,12 @@
+
+{
+  "name": "Reply",
+  "type": "object",
+  "properties": {
+    "discussion_id": { "type": "string" },
+    "content": { "type": "string" },
+    "upvotes": { "type": "number", "default": 0 },
+    "is_solution": { "type": "boolean", "default": false }
+  },
+  "required": ["discussion_id", "content"]
+}
